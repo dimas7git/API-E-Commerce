@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from flask_login import login_user, login_required, logout_user, current_user
-from models import db, User, Product, CartItem
-from main import app
+from app.models import db, User, Product, CartItem
+from app.main import app
 
 CORS(app)
 

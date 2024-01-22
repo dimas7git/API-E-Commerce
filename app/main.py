@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_login import LoginManager
-from models import User, db
+from app.models import User, db
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ login_manager.login_view = 'login'
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-from routes import *
+from app.routes import *
 
 if __name__ == "__main__":
     app.run(debug=True)
