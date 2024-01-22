@@ -80,7 +80,7 @@ paths:
         - name: q
           in: query
           type: string
-          required: true
+          requitered: true
           description: Search query
       responses:
         200:
