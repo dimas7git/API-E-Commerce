@@ -27,6 +27,7 @@ This is a simple E-commerce API built with Flask, Flask-SQLAlchemy, Flask-Login,
 4. Run the application:
 
     ```bash
+    cd app 
     python main.py
     ```
 
